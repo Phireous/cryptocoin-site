@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Phireous/project2/issues"
   },
-  "homepage": "https://github.com/Phireous/project2#readme"
+  "homepage": "https://github.com/Phireous/project2#readme",
+  "dependencies": {
+    "tablesaw": "^3.0.3"
+  }
 }
