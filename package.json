@@ -18,6 +18,14 @@
   },
   "homepage": "https://github.com/Phireous/project2#readme",
   "dependencies": {
+<<<<<<< HEAD
     "tablesaw": "^3.0.3"
+=======
+    "body-parser":"^1.17.2",
+    "express":"^4.15.4",
+    "sequelize":"^4.5.0",
+    "mysql":"^2.14.1",
+    "tablesaw":"^3.0.3"
+>>>>>>> 2735bcd6eaae6896010f97307a23676e9f036f08
   }
 }
