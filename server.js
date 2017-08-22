@@ -6,6 +6,7 @@ var bodyParser = require("body-parser");
 var port = process.env.PORT || 8888;
 
 var app = express();
+var db = require("./models");
 
 app.use(express.static(__dirname + "/public"));
 
@@ -15,3 +16,13 @@ var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+var routes = require("./routes/project2_controller.js");
+
+app.use(routes);
+
+db.sequelize.sync().then(function() {
+    app.listen(port, function() {
+        console.log("App listening on PORT " + port);
+    });
+});
