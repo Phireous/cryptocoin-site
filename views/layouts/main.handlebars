@@ -32,84 +32,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+{{{body}}}
 
-	<div id="wrap">
-    
-    <div class="header">
-        <span>Welcome to ...</span>
-    </div>
-
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active" id="contact"><a href="/contact.html">Contact <span class="sr-only">(current)</span></a></li>
-            </ul>
-
-
-
-            <form class="navbar-form navbar-right">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Search</button>
-            </form>
-        </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
-    <!-- E-mail form -->
-    <div class="email">
-        <form id="newsletter-signup" action="?action=signup" method="post">
-            <fieldset>
-                <label for="signup-email">E-mail:</label>
-                <input type="text" name="signup-email" id="signup-email" />
-                <input type="submit" id="signup-button" value="Sign Up!" />
-                <p id="signup-response"></p>
-            </fieldset>
-        </form>
-    </div>
-
-    <!-- Table saw table -->
-    <div class="table">
-        <table class="table table-striped table-hover tablesaw tablesaw-swipe tablesaw-sortable" data-tablesaw-mode="swipe" data-tablesaw-sortable="" data-tablesaw-sortable-switch="" data-tablesaw-minimap="" data-tablesaw-mode-switch="" style="">
-                    <thead>
-                        <tr>
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="persist" class="tablesaw-cell-persist tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Name</button></th>
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3" class="tablesaw-sortable-head tablesaw-sortable-ascending"><button class="tablesaw-sortable-btn">Success Rating (0-5)</button></th>
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2" class="tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Website</button></th>
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1" class="tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Status</button></th>
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4" class="tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Team Location</button></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{#each rico}}
-                        <tr>
-                            <td class="title tablesaw-cell-persist">{{this.name}}</td>
-                            <td>{{this.successRating}}</td>
-                            <td><a href="{{this.website}}">{{this.website}}</td>
-                            <td>{{this.status}}</td>
-                            <td>{{this.teamLocation}}</td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-    </div>
-
-</div>
 </body>
 <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
