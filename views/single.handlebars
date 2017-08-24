@@ -1,0 +1,22 @@
+    <script src="assets/js/update.js" type="text/javascript"></script>
+
+    <form>
+        <h2>Update</h2>
+        <div class="form-group">
+            <input input type="hidden" type="text" name="list_id" value={{this.id}}><br>
+            <label for="title">Name</label>
+            <input placeholder="{{this.name}}" type="text" class="form-control" id="name"><br />
+            <label for="title">Success Rating</label>
+            <input placeholder="{{this.successRating}}" type="text" class="form-control" id="successRating"><br />
+            <label for="title">Official Website</label>
+            <input placeholder="{{this.officialWebsite}}" type="text" class="form-control" id="officialWebsite"><br />
+            <label for="title">Status</label>
+            <input placeholder="{{this.status}}" type="text" class="form-control" id="status"><br />
+            <label for="title">Team Location</label>
+            <input placeholder="{{this.teamLocation}}" type="text" class="form-control" id="teamLocation">
+            <br />
+            <button type="submit" class="btn btn-success submit">Submit</button>
+        </div>
+    </form>
+
+

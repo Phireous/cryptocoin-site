@@ -1,0 +1,25 @@
+<!-- Table saw table -->
+    <div class="table">
+        <table class="table table-striped table-hover tablesaw tablesaw-swipe tablesaw-sortable" data-tablesaw-mode="swipe" data-tablesaw-sortable="" data-tablesaw-sortable-switch="" data-tablesaw-minimap="" data-tablesaw-mode-switch="" style="">
+                    <thead>
+                        <tr>
+                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="persist" class="tablesaw-cell-persist tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Name</button></th>
+                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3" class="tablesaw-sortable-head tablesaw-sortable-ascending"><button class="tablesaw-sortable-btn">Success Rating (0-5)</button></th>
+                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2" class="tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Website</button></th>
+                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1" class="tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Status</button></th>
+                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4" class="tablesaw-sortable-head"><button class="tablesaw-sortable-btn">Team Location</button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each rico}}
+                        <tr>
+                            <td class="title tablesaw-cell-persist"><a class="btn btn-default" href="/api/{{this.id}}">Edit</a>{{this.name}}</td>
+                            <td>{{this.successRating}}</td>
+                            <td><a href="{{this.officialWebsite}}">{{this.officialWebsite}}</td>
+                            <td>{{this.status}}</td>
+                            <td>{{this.teamLocation}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+    </div>
