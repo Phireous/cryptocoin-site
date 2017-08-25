@@ -1,6 +1,7 @@
 //setup npm packages
 var express = require("express");
 var bodyParser = require("body-parser");
+var methodOverride = require("method-override");
 
 
 var port = process.env.PORT || 8888;
@@ -11,7 +12,7 @@ var db = require("./models");
 app.use(express.static(__dirname + "/public"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
-
+app.use(methodOverride("_method"));
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));

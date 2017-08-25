@@ -45,32 +45,22 @@ router.get("/api/:id", function(req, res) {
 });
 
 router.put("/ricolist/update", function(req, res) {
-
-  // db.ricolist.update({
-  //   name: req.body.name,
-  //   successRating: req.body.successRating,
-  //   officialWebsite: req.body.officialWebsite,
-  //   status: req.body.status,
-  //   teamLocation: req.body.teamLocation
-  // },
-  //   {
-  //     where: {
-  //       id: req.body.list_id
-  //     }
-  //   }
-  // ).then(function(result) {
-  //   res.redirect("/update");
-  // });
-  router.put("/api/posts", function(req, res) {
-    db.ricolist.update(
-      req.body,
-      {
-        where: {
-          id: req.body.list_id
-        }
-      }).then(function(dbPost) {
-        res.json(dbPost);
-      });
+  
+  db.ricolist.update({
+    name: req.body.name,
+    successRating: req.body.successRating,
+    officialWebsite: req.body.officialWebsite,
+    status: req.body.status,
+    teamLocation: req.body.teamLocation
+  },
+    {
+      where: {
+        id: req.body.list_id
+      }
+    }
+  ).then(function(result) {
+    console.log(result);
+    res.redirect("/update");
   });
 });
 

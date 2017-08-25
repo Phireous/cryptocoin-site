@@ -1,19 +1,19 @@
     <script src="assets/js/update.js" type="text/javascript"></script>
 
-    <form>
+    <form method="POST" action="/ricolist/update?_method=PUT">
         <h2>Update</h2>
         <div class="form-group">
             <input input type="hidden" type="text" name="list_id" value={{this.id}}><br>
             <label for="title">Name</label>
-            <input placeholder="{{this.name}}" type="text" class="form-control" id="name"><br />
+            <input value="{{this.name}}" type="text" class="form-control" name="name"><br />
             <label for="title">Success Rating</label>
-            <input placeholder="{{this.successRating}}" type="text" class="form-control" id="successRating"><br />
+            <input value="{{this.successRating}}" type="text" class="form-control" name="successRating"><br />
             <label for="title">Official Website</label>
-            <input placeholder="{{this.officialWebsite}}" type="text" class="form-control" id="officialWebsite"><br />
+            <input value="{{this.officialWebsite}}" type="text" class="form-control" name="officialWebsite"><br />
             <label for="title">Status</label>
-            <input placeholder="{{this.status}}" type="text" class="form-control" id="status"><br />
+            <input value="{{this.status}}" type="text" class="form-control" name="status"><br />
             <label for="title">Team Location</label>
-            <input placeholder="{{this.teamLocation}}" type="text" class="form-control" id="teamLocation">
+            <input value="{{this.teamLocation}}" type="text" class="form-control" name="teamLocation">
             <br />
             <button type="submit" class="btn btn-success submit">Submit</button>
         </div>
