@@ -14,6 +14,12 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+#initial {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
 /* Set a style for all buttons */
 button {
     background-color: #000099;
@@ -125,9 +131,7 @@ span.psw {
 </style>
 <body>
 
-<h2>Login Form</h2>
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="initial">Admin Login Access Point</button>
 
 <div id="id01" class="modal">
   

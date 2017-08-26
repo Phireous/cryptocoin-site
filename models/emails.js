@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes){
             validate:{
                 isEmail: true
             }
-        }
+        }, 
     });
     return subscriberList;
 };
