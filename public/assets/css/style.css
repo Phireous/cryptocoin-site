@@ -1,11 +1,9 @@
 /*all pages*/
 
-html {
-    height: 100%;
-}
-
+/*
 #wrap {
 	width: 100%;
+    height: 100%;
 	background: #000;
 }
 
@@ -22,8 +20,8 @@ html {
 }
 
 /*E-mail form*/
-#newsletter-signup { 
-    padding:20px;
+/*#newsletter-signup { 
+    padding:15px;
     margin:0;
 }
 
@@ -93,8 +91,143 @@ input {
  
 .response-error {
    background:url("cross.png") no-repeat;
+}*/
+
+
+
+/*Tablesaw*/
+
+/*.table {
+  width: 80%;
+  height: auto;
+}*/
+
+/*Contact*/
+
+/*#content {
+    background-color: #666;
+    width: 100%;
+    height: 100%;
 }
 
+#contact-header h1 {
+    padding: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 2px #333;
+}*/
+
+
+/*all pages*/
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    /*background: #000;*/
+    background-image: url(images/smoke.jpeg);
+    background-size: cover;
+}
+
+.header {
+    background: #666;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.header span {
+  color: #fff;
+  margin-left: 45%;
+  letter-spacing: 1px;
+}
+
+.navbar-brand {
+    width: 70px;
+    color: #8c8c8c;
+}
+
+/*E-mail form*/
+#newsletter-signup { 
+    padding:0px;
+    margin:0;
+}
+
+fieldset {
+    border:none; 
+    background: #000;
+    margin-bottom: 20px;  
+    width: 100%; 
+}
+
+fieldset label {
+    padding-bottom: 20px;
+    color: #666;
+}
+ 
+.email {
+    text-align: right;
+    width:100%;
+}
+
+form {
+    margin:20px;    
+    padding:15px;
+    border: none;
+}
+ 
+input {
+    border:none;
+    background-color:none;  
+}
+ 
+#signup-email {
+    border:1px solid #999999;
+    color:#9E9E9E;
+    padding:5px;
+    margin-left:10px;
+    margin-right:4px;
+}
+ 
+#signup-email:focus {
+    border-color:#9FCBFF;
+    background-color:#DFEEFF;
+    background-image:none;
+    color:#000;
+}
+ 
+#signup-button {
+    background-color:#9FCBFF;
+    color:#FFF;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    padding:5px;
+    text-shadow: 1px 1px 1px #5FA8FF;   
+}
+ 
+#signup-button:hover {
+    cursor:pointer;
+    background-color:#7FB9FF;
+}
+ 
+#signup-response {
+    display:inline;
+    margin-left:4px;
+    padding-left:20px;
+}
+ 
+.response-waiting {
+    background:url("loading.gif") no-repeat;
+}
+ 
+.response-success {
+   background:url("tick.png") no-repeat;
+}
+ 
+.response-error {
+   background:url("cross.png") no-repeat;
+}
 
 
 /*Tablesaw*/
@@ -104,20 +237,19 @@ input {
   height: auto;
 }
 
-/*Contact*/
 
-#content {
-    background-color: #666;
+/*footer*/
+
+footer {
+    height: 150px;
     width: 100%;
-    height: 100vh;
+    background: #666;
 }
 
-#contact-header h1 {
-    padding: 60px;
-    text-align: center;
+footer p {
     color: #fff;
-    font-size: 50px;
-    text-shadow: 2px 2px #333;
+    text-align: center;
+    padding-top: 60px;
 }
 
 
