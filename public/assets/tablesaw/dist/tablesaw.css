@@ -71,7 +71,6 @@ a.tablesaw-btn {
   height: 100%;
   z-index: 2;
   min-height: 1em;
-  opacity: 0;
   color: transparent;
 }
 
@@ -218,7 +217,6 @@ a.tablesaw-btn {
 }
 
 .tablesaw-advance a.tablesaw-nav-btn.disabled {
-  opacity: .25;
   cursor: default;
   pointer-events: none;
 }
@@ -242,7 +240,7 @@ a.tablesaw-btn {
   padding: .5em 0;
   clear: both;
   display: block;
-  color: #888;
+  color: #fff;
   margin-right: .5em;
   text-transform: uppercase;
 }
@@ -280,7 +278,7 @@ a.tablesaw-btn {
 }
 
 .tablesaw-bar .tablesaw-bar-section select {
-  color: #888;
+  color: #fff;
   text-transform: none;
   background: transparent;
 }
@@ -740,7 +738,7 @@ a.tablesaw-btn {
 .tablesaw-advance-dots li i {
   width: .25em;
   height: .25em;
-  background: #555;
+  background: #fff;
   border-radius: 100%;
   display: inline-block;
 }
