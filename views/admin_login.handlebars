@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
 <style >
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -11,9 +14,16 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+#initial {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
 /* Set a style for all buttons */
 button {
     background-color: #8c8c8c;
+    background-color: #000099;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -69,13 +79,7 @@ span.psw {
     padding-top: 60px;
 }
 
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
+
 
 /* The Close Button (x) */
 .close {
@@ -122,13 +126,11 @@ span.psw {
 </style>
 <body>
 
-<h2>Login Form</h2>
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="initial">Admin Login Access Point</button>
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="/admin_page">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img_avatar2.png" alt="Please enter login information" class="avatar">

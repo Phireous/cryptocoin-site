@@ -134,8 +134,7 @@ module.exports = function(sequelize, DataTypes){
         },
         newsExposureRating: {
             type: DataTypes.STRING
-        }
-
+        },
     });
     return CurrencyInfo;
 };

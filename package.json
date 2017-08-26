@@ -1,7 +1,7 @@
 {
   "name": "project2",
   "version": "1.0.0",
-  "description": "",
+  "description": "project2",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -9,8 +9,15 @@
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
     "mysql2": "^1.4.1",
+<<<<<<< HEAD
     "sequelize": "^4.7.5",
     "tablesaw": "^3.0.3"
+=======
+    "method-override": "^2.3.9",
+    "sequelize": "^4.7.2",
+    "tablesaw": "^3.0.3", 
+    "method-override": "^2.3.9"
+>>>>>>> 75d64aa48627487480dbf95368f0398b44186226
   },
   "devDependencies": {},
   "scripts": {
